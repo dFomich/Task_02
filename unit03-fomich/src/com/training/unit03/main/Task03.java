@@ -4,14 +4,14 @@ import java.util.Scanner;
 public class Task03 {
 
 	public static void main(String[] args) {
-		// Программа запрашивает у пользователя значения чисел a, b, c, и затем
-		//вычисляет значение выражения a2-(b-c)2+ln(b2+1)
+		// ГЏГ°Г®ГЈГ°Г Г¬Г¬Г  Г§Г ГЇГ°Г ГёГЁГўГ ГҐГІ Гі ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї Г§Г­Г Г·ГҐГ­ГЁГї Г·ГЁГ±ГҐГ« a, b, c, ГЁ Г§Г ГІГҐГ¬
+		//ГўГ»Г·ГЁГ±Г«ГїГҐГІ Г§Г­Г Г·ГҐГ­ГЁГҐ ГўГ»Г°Г Г¦ГҐГ­ГЁГї a2-(b-c)2+ln(b2+1).
 		
 			
 		try (Scanner sc = new Scanner (System.in)) {
 		double a, b, c, result;
-		String err = "Вы ввели недопустимое значение. Повторите.";
-		System.out.println("Введите значение a: ");
+		String err = "Г‚Г» ГўГўГҐГ«ГЁ Г­ГҐГ¤Г®ГЇГіГ±ГІГЁГ¬Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ. ГЏГ®ГўГІГ®Г°ГЁГІГҐ.";
+		System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ a: ");
 		System.out.print("> ");
 		
 		while (!sc.hasNextDouble()){
@@ -24,7 +24,7 @@ public class Task03 {
 		a = sc.nextDouble();
 		
 		
-		System.out.println("Введите значение b: ");
+		System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ b: ");
 		System.out.print("> ");
 		while (!sc.hasNextDouble()) {
 				sc.nextLine();
@@ -34,7 +34,7 @@ public class Task03 {
 		}		
 		b = sc.nextDouble();
 		
-		System.out.println("Введите значение c: ");
+		System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ c: ");
 		System.out.print("> ");
 		while (!sc.hasNextDouble()) {
 				sc.nextLine();
@@ -45,7 +45,7 @@ public class Task03 {
 		c = sc.nextDouble();
 		
 		result = Math.pow(a, 2) - Math.pow((b-c), 2) + Math.log(Math.pow(b, 2)+1);
-		System.out.println("Ответ: " + result);		
+		System.out.println("ГЋГІГўГҐГІ: " + result);		
 		}
 		
 	
